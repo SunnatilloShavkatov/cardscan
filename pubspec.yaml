@@ -1,0 +1,29 @@
+name: cardscan
+description: "Flutter plugin for on-device payment card scanning on Android and iOS."
+version: 0.0.1
+homepage: https://github.com/SunnatilloShavkatov/cardscan
+repository: https://github.com/SunnatilloShavkatov/cardscan
+issue_tracker: https://github.com/SunnatilloShavkatov/cardscan/issues
+
+environment:
+  sdk: ">=3.11.0 <4.0.0"
+  flutter: ">=3.41.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  analysis_lints: ^1.0.9
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: uz.shs.cardscan
+        pluginClass: CardscanPlugin
+      ios:
+        pluginClass: CardscanPlugin
