@@ -1,7 +1,7 @@
-import 'package:cardscan/cardscan_platform_interface.dart';
-import 'package:cardscan/src/card_scan_models.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:shs_cardscan/cardscan_platform_interface.dart';
+import 'package:shs_cardscan/src/card_scan_models.dart';
 
 class MethodChannelCardscan extends CardscanPlatform {
   @visibleForTesting

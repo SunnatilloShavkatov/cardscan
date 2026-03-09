@@ -1,6 +1,6 @@
-import 'package:cardscan/cardscan_method_channel.dart';
-import 'package:cardscan/src/card_scan_models.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'package:shs_cardscan/cardscan_method_channel.dart';
+import 'package:shs_cardscan/src/card_scan_models.dart';
 
 abstract class CardscanPlatform extends PlatformInterface {
   CardscanPlatform() : super(token: _token);

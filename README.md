@@ -1,6 +1,6 @@
-# cardscan
+# shs_cardscan
 
-`cardscan` is a Flutter plugin for on-device payment card scanning on Android and iOS.
+`shs_cardscan` is a Flutter plugin for on-device payment card scanning on Android and iOS.
 
 It returns a small neutral result model:
 
@@ -14,7 +14,7 @@ It returns a small neutral result model:
 
 ```yaml
 dependencies:
-  cardscan: ^0.0.1
+  shs_cardscan: ^0.0.1
 ```
 
 Then run:
@@ -26,7 +26,7 @@ flutter pub get
 ## Usage
 
 ```dart
-import 'package:cardscan/cardscan.dart';
+import 'package:shs_cardscan/shs_cardscan.dart';
 
 const scanner = Cardscan();
 

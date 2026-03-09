@@ -1,4 +1,4 @@
-import 'package:cardscan/cardscan.dart';
+import 'package:shs_cardscan/shs_cardscan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

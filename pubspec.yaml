@@ -1,4 +1,4 @@
-name: cardscan
+name: shs_cardscan
 description: "Flutter plugin for on-device payment card scanning on Android and iOS."
 version: 0.0.1
 homepage: https://github.com/SunnatilloShavkatov/cardscan
