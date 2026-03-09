@@ -10,32 +10,33 @@ void main() {
   const channel = MethodChannel('cardscan');
 
   tearDown(() {
-    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-        .setMockMethodCallHandler(channel, null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, null);
   });
 
   test('isSupported', () async {
-    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-        .setMockMethodCallHandler(channel, (methodCall) async {
-          expect(methodCall.method, 'isSupported');
-          return true;
-        });
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, (
+      methodCall,
+    ) async {
+      expect(methodCall.method, 'isSupported');
+      return true;
+    });
 
     expect(await platform.isSupported(), isTrue);
   });
 
   test('scanCard maps native result', () async {
-    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-        .setMockMethodCallHandler(channel, (methodCall) async {
-          expect(methodCall.method, 'scanCard');
-          return <String, Object?>{
-            'cardNumber': '8600123412341234',
-            'expiryMonth': '08',
-            'expiryYear': '28',
-            'cardholderName': 'TEST USER',
-            'networkName': 'Uzcard',
-          };
-        });
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, (
+      methodCall,
+    ) async {
+      expect(methodCall.method, 'scanCard');
+      return <String, Object?>{
+        'cardNumber': '8600123412341234',
+        'expiryMonth': '08',
+        'expiryYear': '28',
+        'cardholderName': 'TEST USER',
+        'networkName': 'Uzcard',
+      };
+    });
 
     final result = await platform.scanCard(const CardScanOptions());
     expect(result?.cardNumber, '8600123412341234');
