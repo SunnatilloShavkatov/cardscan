@@ -3,7 +3,7 @@ import UIKit
 import XCTest
 
 
-@testable import cardscan_plugin
+@testable import shs_cardscan
 
 // This demonstrates a simple unit test of the Swift portion of this plugin's implementation.
 //

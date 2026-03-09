@@ -11,7 +11,7 @@ import Foundation
 public class CSBundle {
     // If you change the bundle name make sure to set these before
     // initializing the library
-    public static var bundleIdentifier = "uz.shs.cardscan.CardScan"
+    public static var bundleIdentifier = "org.cocoapods.shs-cardscan"
     public static var cardScanBundle: Bundle?
     public static var namedBundle = "CardScan"
     public static var namedBundleExtension = "bundle"
