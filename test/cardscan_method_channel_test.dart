@@ -1,7 +1,7 @@
-import 'package:shs_cardscan/cardscan_method_channel.dart';
-import 'package:shs_cardscan/src/card_scan_models.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shs_cardscan/cardscan_method_channel.dart';
+import 'package:shs_cardscan/src/card_scan_models.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

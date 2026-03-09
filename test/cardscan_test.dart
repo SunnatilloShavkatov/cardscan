@@ -1,8 +1,8 @@
-import 'package:shs_cardscan/shs_cardscan.dart';
-import 'package:shs_cardscan/cardscan_method_channel.dart';
-import 'package:shs_cardscan/cardscan_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'package:shs_cardscan/cardscan_method_channel.dart';
+import 'package:shs_cardscan/cardscan_platform_interface.dart';
+import 'package:shs_cardscan/shs_cardscan.dart';
 
 class MockCardscanPlatform with MockPlatformInterfaceMixin implements CardscanPlatform {
   @override
