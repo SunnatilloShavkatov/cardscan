@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'shs_cardscan'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'Flutter wrapper for native card scanning.'
   s.description      = <<-DESC
 A Flutter plugin that launches a native card scanner and returns scanned card details.

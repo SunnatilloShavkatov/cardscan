@@ -14,7 +14,7 @@ It returns a small neutral result model:
 
 ```yaml
 dependencies:
-  shs_cardscan: ^0.0.1
+  shs_cardscan: ^0.0.3
 ```
 
 Then run:
@@ -67,6 +67,11 @@ Make sure your app has camera permission:
 ```xml
 <uses-permission android:name="android.permission.CAMERA" />
 ```
+
+For Google Play release builds, keep the app on `armeabi-v7a` and `arm64-v8a`
+until the upstream vendor TensorFlow Lite prebuilts are refreshed for all 64-bit
+desktop/emulator ABIs. The example app in this repository already applies that
+release-only ABI filter.
 
 ### iOS
 

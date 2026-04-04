@@ -1,3 +1,10 @@
+## 0.0.3
+
+* Fix: Resolved Android release build issues caused by missing `Parcelize` runtime classes.
+* Fix: Added a release-only `integration_test` Android stub so release APK/AAB builds complete reliably.
+* Fix: Limited Android release builds to `armeabi-v7a` and `arm64-v8a` to avoid shipping non-compliant desktop/emulator native slices to Google Play.
+* Docs: Updated installation version and Android release notes.
+
 ## 0.0.2
 
 * Fix: Resolved crash on iOS due to module mismatch in storyboard.

@@ -1,10 +1,11 @@
 group = "uz.shs.cardscan"
 version = "1.0-SNAPSHOT"
 
+val kotlinVersion = "2.2.20"
 val vendorMavenRepo = projectDir.resolve("maven").toURI()
 
 buildscript {
-    val kotlinVersion = "2.2.20"
+    val kotlinGradlePluginVersion = "2.2.20"
     repositories {
         maven(url = uri("maven"))
         google()
@@ -13,7 +14,7 @@ buildscript {
 
     dependencies {
         classpath("com.android.tools.build:gradle:8.11.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinGradlePluginVersion")
     }
 }
 
@@ -96,6 +97,7 @@ android {
 dependencies {
     implementation("uz.shs.cardscan:cardscan-ui:2.2.0003-local.3")
     implementation("uz.shs.cardscan:scan-payment-full:2.2.0003-local.3")
+    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:$kotlinVersion")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.mockito:mockito-core:5.0.0")
