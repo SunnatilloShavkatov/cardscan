@@ -1,3 +1,8 @@
+## 0.0.4
+
+* Fix: Removed vendored TensorFlow Lite `x86` and `x86_64` JNI slices from the Android package to avoid Google Play 16 KB page size warnings caused by the legacy desktop/emulator prebuilt.
+* Docs: Clarified that Android emulator testing should use an ARM image or a physical device because the scanner runtime now ships only `armeabi-v7a` and `arm64-v8a`.
+
 ## 0.0.3
 
 * Fix: Resolved Android release build issues caused by missing `Parcelize` runtime classes.

@@ -14,7 +14,7 @@ It returns a small neutral result model:
 
 ```yaml
 dependencies:
-  shs_cardscan: ^0.0.3
+  shs_cardscan: ^0.0.4
 ```
 
 Then run:
@@ -68,10 +68,13 @@ Make sure your app has camera permission:
 <uses-permission android:name="android.permission.CAMERA" />
 ```
 
-For Google Play release builds, keep the app on `armeabi-v7a` and `arm64-v8a`
-until the upstream vendor TensorFlow Lite prebuilts are refreshed for all 64-bit
-desktop/emulator ABIs. The example app in this repository already applies that
-release-only ABI filter.
+The Android package ships the vendored TensorFlow Lite binary only for
+`armeabi-v7a` and `arm64-v8a`. This avoids the current Google Play 16 KB page
+size warning caused by the legacy `x86_64` TFLite prebuilt.
+
+If you test on Android emulators, prefer an ARM-based image or a physical
+device. `x86` and `x86_64` emulator ABIs are not bundled for the scanner
+runtime.
 
 ### iOS
 
