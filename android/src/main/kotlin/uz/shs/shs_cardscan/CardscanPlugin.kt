@@ -1,4 +1,4 @@
-package uz.shs.cardscan
+package uz.shs.shs_cardscan
 
 import android.app.Activity
 import android.content.Context
@@ -24,7 +24,7 @@ class CardscanPlugin :
     ActivityAware,
     PluginRegistry.ActivityResultListener {
     private companion object {
-        const val CHANNEL_NAME = "cardscan"
+        const val CHANNEL_NAME = "shs_cardscan"
         const val REQUEST_CODE = 9472
         const val REQUEST_EXTRA = "request"
         const val RESULT_EXTRA = "result"

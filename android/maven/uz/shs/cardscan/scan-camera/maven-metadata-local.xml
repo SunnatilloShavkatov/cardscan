@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>uz.shs.cardscan</groupId>
+  <groupId>uz.shs.shs_cardscan</groupId>
   <artifactId>scan-camera</artifactId>
   <versioning>
     <latest>2.2.0003-local.3</latest>

@@ -1,1 +1,1 @@
-rootProject.name = 'cardscan'
+rootProject.name = 'shs_cardscan'

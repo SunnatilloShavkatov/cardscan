@@ -5,7 +5,7 @@ import 'package:shs_cardscan/src/card_scan_models.dart';
 
 class MethodChannelCardscan extends CardscanPlatform {
   @visibleForTesting
-  final methodChannel = const MethodChannel('cardscan');
+  final methodChannel = const MethodChannel('shs_cardscan');
 
   @override
   Future<bool> isSupported() async => await methodChannel.invokeMethod<bool>('isSupported') ?? false;

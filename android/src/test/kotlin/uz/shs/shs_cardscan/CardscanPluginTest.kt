@@ -1,4 +1,4 @@
-package uz.shs.cardscan
+package uz.shs.shs_cardscan
 
 import android.os.Parcel
 import android.os.Parcelable

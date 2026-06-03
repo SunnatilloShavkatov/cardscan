@@ -1,5 +1,5 @@
-group = "uz.shs.cardscan"
-version = "1.0-SNAPSHOT"
+group = "uz.shs.shs_cardscan"
+version = "1.0.0"
 
 val kotlinVersion = "2.2.20"
 val vendorMavenRepo = projectDir.resolve("maven").toURI()
@@ -7,13 +7,10 @@ val vendorMavenRepo = projectDir.resolve("maven").toURI()
 buildscript {
     val kotlinGradlePluginVersion = "2.2.20"
     repositories {
-        maven(url = uri("maven"))
         google()
         mavenCentral()
     }
-
     dependencies {
-        classpath("com.android.tools.build:gradle:8.11.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinGradlePluginVersion")
     }
 }
@@ -38,7 +35,7 @@ plugins {
 }
 
 android {
-    namespace = "uz.shs.cardscan"
+    namespace = "uz.shs.shs_cardscan"
 
     compileSdk = 36
 
