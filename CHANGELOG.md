@@ -1,3 +1,13 @@
+## 1.0.0
+
+* **BREAKING:** Renamed Android package from `uz.shs.cardscan` to `uz.shs.shs_cardscan`. App developers consuming the plugin do not need changes; downstream Android code referencing the package must update imports.
+* **BREAKING:** Renamed Flutter `MethodChannel` from `cardscan` to `shs_cardscan`. Affects only direct channel consumers; users of the public Dart API are unaffected.
+* Feat: Added iOS Swift Package Manager (SPM) support alongside CocoaPods. New `ios/shs_cardscan/Package.swift` with a dedicated `CardScanObjC` target for the Objective-C model wrapper to satisfy SPM's mixed-language restriction.
+* Feat: Added `defaultLocalization: "en"` and `Bundle.module` resource loading for SPM-based consumers.
+* Chore: Bumped minimum Flutter to `3.44.0` and Dart SDK to `3.12.0`.
+* Chore: Pinned Android Kotlin Gradle Plugin to `2.2.20` to match prebuilt vendored libraries; migration to Flutter's built-in Kotlin is deferred until Flutter ships a bundled KGP compatible with Kotlin 2.2 metadata.
+* Chore: Added `flutter.android.skipBuildDependencyValidation=true` to the example `gradle.properties` to suppress the Kotlin-version validation warning while the bundled KGP catches up.
+
 ## 0.0.4
 
 * Fix: Removed vendored TensorFlow Lite `x86` and `x86_64` JNI slices from the Android package to avoid Google Play 16 KB page size warnings caused by the legacy desktop/emulator prebuilt.
